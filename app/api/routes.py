@@ -13,7 +13,7 @@ def get_entry(id):
 
 @bp.route('/get_entries/<int:id>', methods=['GET'])
 @token_auth.login_required
-def get_entries():
+def get_entries(id):
     # TODO: Get the entries for the current user. Probably a list of ints.
     # Also, check to make sure that the specified ID equals the current user's ID.
     pass
